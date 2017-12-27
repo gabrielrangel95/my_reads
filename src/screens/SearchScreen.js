@@ -28,7 +28,6 @@ export default class SearchScreen extends Component{
 
   updateSearch = () =>{
     this.search(this.state.query)
-    console.log('updating serach ')
   }
 
   async search (query){

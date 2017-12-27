@@ -43,19 +43,15 @@ export default class App extends Component {
   getBooksList = async () =>{ //get the book's list from the API
   await BooksAPI.getAll().then((books) => {
     this.setState({books})
-    console.log(books)
   })
 }
 
 updateBookShelf = async (book, shelf) =>{ //update the book shelf using the API
-  console.log(book,shelf)
   var response = null;
   await BooksAPI.update(book,shelf).then((resp) => {
     response = resp;
   })
-  this.getBooksList();
-  console.log(response)
-  
+  this.getBooksList();  
 }
 
 

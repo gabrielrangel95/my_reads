@@ -39,7 +39,6 @@ export default class BooksListComponent extends Component{
     const { updateBookShelf, updateSearch } = this.props;
     this.openMensage()
     if(updateSearch){
-      console.log('updating')
       updateSearch()
     }
     updateBookShelf(book,shelf)
