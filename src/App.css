@@ -1,0 +1,28 @@
+html, body, .root {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+body, .app {
+  background: white;
+}
+.open-search {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background-image: url("./resources/main_logo.svg");
+  background-repeat: repeat-y;
+  background-size: 'auto';
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.centerElements {
+  align-items: 'center';
+}
